@@ -1,0 +1,112 @@
+/* ===== Street Style FIFA Card ===== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 30px 0;
+    color: #0fffcf;
+    text-shadow: 0 0 10px #0fffcf, 0 0 20px #0fffcf;
+    border: 3px solid #0fffcf;
+    border-radius: 15px;
+    padding: 15px 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 0 25px #0fffcf;
+}
+
+.friends-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1250px;
+}
+
+.friend {
+    background: linear-gradient(145deg, #111, #222);
+    width: 240px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 255, 207, 0.4);
+    border: 4px solid #0fffcf;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.friend:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 255, 207, 0.7);
+}
+
+.friend .rating {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0fffcf;
+    margin-bottom: 5px;
+}
+
+.friend img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #0fffcf;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.friend img:hover {
+    transform: scale(1.2) rotate(-12deg) translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 255, 207, 0.7);
+}
+
+.friend .details p {
+    margin: 5px 0;
+}
+
+.friend form select,
+.friend form textarea,
+.friend form input[type="submit"] {
+    width: 100%;
+    margin: 6px 0;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+.friend form input[type="submit"] {
+    background: #0fffcf;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.friend form input[type="submit"]:hover {
+    background: #00fff0;
+}
+
+.comment-box {
+    background-color: #111;
+    padding: 6px;
+    margin-top: 6px;
+    border-radius: 6px;
+    color: #0fffcf;
+}
